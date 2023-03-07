@@ -1,0 +1,73 @@
+main{
+    padding: 0 10vw;
+}
+.content__aboutus {
+    background: #ffffff7a;
+    width: 85%;
+    margin-top: 3%;
+    margin-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+    padding: 2vh 0;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.content__aboutus h1 {
+    padding: 2vh;
+    align-self: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.aboutus_description {
+    border-left: 5px solid grey;
+}
+.aboutus_description p {
+    padding-left: 2vw;
+    padding-right: 2px;
+    font-size: 17px;
+    color: rgb(48, 47, 47);
+    font-weight: bold;
+}
+
+.social_media_links {
+    width: 100%;
+}
+.social_media_links h2 {
+    padding: 1vw;
+}
+.social_media_links div {
+    padding: 0 2vw;
+    border-left: 5px solid grey;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 5px;
+}
+.social_media_links div p {
+    width: 100%;
+    font-size: 15px;
+    color: rgb(48, 47, 47);
+}
+a {
+    color: black;
+}
+
+.hideelem {
+    display: none !important;
+}
+
+.gmail {
+    width: 100%;
+    padding: 1vw;
+    font-size: 18px;
+}
+.gmail a {
+    color: black;
+}

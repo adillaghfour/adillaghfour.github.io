@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/config.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style_service.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/b9106258b7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>menagemaroc | services</title>
+</head>
+<body>
+    <div class="indev">
+        <h1><span style="color: orange;">Menage</span>Maroc</h1>
+        <img src="assets/images/inDev.jpg" width="90%">
+        <h2>Nous tenons à informer nos utilisateurs que la plateforme MenageMaroc est actuellement en cours de développement par notre équipe informatique pour les versions mobiles. Nous travaillons sans relâche pour rendre notre plateforme accessible et conviviale sur tous les appareils mobiles <br> Merci pour votre compréhension</h2>
+    </div>
+    <div class="indev_hide">
+    <nav id="navbar">
+        <a href="index.html"><div class="logo animate__fadeInDown" ><span style="color: orange;">Menage</span>Maroc</div></a>
+        <ul class="nav_links">
+            <li><a href="index.html">Acceuil</a><hr></li>
+            <li>|</li>
+            <li class="active"><a href="services.html">Services</a><hr></li>
+            <li>|</li>
+            <li><a href="produits.html">Produits</a><hr></li>
+            <li>|</li>
+            <li><a href="apropos.html">A props de nous</a><hr></li>
+            <li>|</li>
+            <li class="panier"><a href="panier.html"><i class='bx bx-cart'></i>Panier</a><hr><div id="panier_elem">1</div></li>
+        </ul>
+    </nav>
+    <div style="display: none;" class="message animate__animated animate__slideInDown">
+        <h3>Ajoutez d'abord l'une de nos services</h3>
+    </div>
+    <main>
+        <h1 class="animate__animated animate__fadeIn" style="text-align: center; margin-bottom: 2vh;">Reservez dés maintenant</h1>
+        <section>
+            <div class="service animate__animated animate__fadeInLeft ">
+                <h3 style="text-align: center;">Nos Services</h3>
+                <br>
+                <ul class="services">
+                    <li>
+                        <div class="services_header">
+                            <h4>Nettoyage des Maisons</h4>
+                        </div>
+                        <ul class="service_" style="display: inherit; border-bottom: solid gray 1px;">
+                            <li>
+                                <div>
+                                    <img src="assets/images/maison_service.png">
+                                    <p style="color: rgb(63, 63, 63);">Grand Ménage</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/cuisine_service.png">
+                                    <p style="color: rgb(63, 63, 63);">Cuisine</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/entretien-menager.png">
+                                    <p style="color: rgb(63, 63, 63);">Canapé</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <div class="services_header">
+                            <h4>Nettoyage des Voitures</h4>
+                        </div>
+                        <ul class="service_" style="display: inherit; border-bottom: solid gray 1px;">
+                            <li>
+                                <div>
+                                    <img src="assets/images/machine-de-lavage-de-voiture.png">
+                                    <p style="color: rgb(63, 63, 63);">Lavage totale</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/tapis.png">
+                                    <p style="color: rgb(63, 63, 63);">Tapis</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/siege.png">
+                                    <p style="color: rgb(63, 63, 63);">Sièges</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                        </ul>                        
+                    </li>
+                    <li>
+                        <div class="services_header">
+                            <h4>Nettoyage des Jardins</h4>
+                        </div>
+                        <ul class="service_" style="display: inherit">
+                            <li>
+                                <div>
+                                    <img src="assets/images/cour.png">
+                                    <p style="color: rgb(63, 63, 63);">Réparation de clôture</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="assets/images/cloture.png">
+                                    <p style="color: rgb(63, 63, 63);">Renouvellement de l'herbe</p>                            
+                                </div>
+                                <i class="fa-solid fa-plus" onclick="add_price()"></i>
+                            </li>
+                        </ul>                        
+                    </li>
+                </ul>
+            </div>
+             <div class="commande animate__animated animate__fadeInRight">
+                <h3 style="text-align: center;">Votre commande</h3>
+                <form class="commande_form" action="panier.html">
+                    <label for="ville">
+                        <span>Ville*</span>
+                        <select name="ville" required id="ville">
+                            <option disabled value="" selected>Ville</option>
+                            <option value="casablanca">casablanca</option>
+                            <option value="rabat">rabat</option>
+                            <option value="agadir">agadir</option>
+                            <option value="marrakech">marrakech</option>
+                        </select>                        
+                    </label>
+                    <label for="adresse">
+                        <span>Adresse*</span>
+                        <textarea name="adresse" id="adresse" rows="3" placeholder="Votre Adresse"></textarea>
+                    </label>
+                    <label for="nom">
+                        <span>Nom*</span>
+                        <input type="text" placeholder="Votre Nom" id="nom" required>
+                    </label>
+                    <label for="date">
+                        <span>Date*</span>
+                        <input type="date"required id="date">
+                    </label>
+                    <label for="email">
+                        <span>Email*</span>
+                        <input type="email" placeholder="Votre Email" required id="email">
+                    </label>
+                    <label for="tel">
+                        <span>Tel*</span>
+                        <input type="tel" placeholder="Votre Numero de téléphone" id="tel" required>
+                    </label>
+                    <br>
+                    <h2 class="prix">Total: &nbsp; <span id="span_price">0</span> MAD</h2>
+                    <button type="submit" class="commande_btn"><i style="font-size: 2rem;" class='bx bx-cart'></i>Ajouter au panier</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer_logo" style="color: rgb(255, 255, 255);">
+    
+            <div class="tag">
+                <h3 style="color: grey;">Contact</h3>
+                <a href="#"> <i class="fa-solid fa-house"></i>123/Colombo/Sri Lanka</a>
+                <a href="#"> <i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
+            </div>
+            <p style="color: grey; margin-top: 5px;"></p>
+    
+            </div>
+            <div class="tag">
+                <h3>Get Help</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Payment Options</a>
+            </div>
+            <ul class="footer_links">
+                <h3>Accées Rapide <i class="fa-solid fa-link"></i></h3>
+                <li class="active"><a href="index.html">Acceuil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="apropos.html">A props de nous</a></li>
+                <li class="panier"><a href="panier.html"><i class='bx bx-cart'></i>Panier</a></li>
+            </ul>
+            <div class="contactus">
+                <label for="email">Je m’inscris à la newsletter <br> #Nqawa !</label>
+                <div class="form">
+                    <input type="email" id="email" placeholder="Votre Email">
+                    <button>Envoyer</button>
+                </div>
+                <p>Suivez-nous sur les réseaux sociaux</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrights">
+            <h3><i class="fa-solid fa-at"></i> Copyright 2023 - DEV101 - Agourram Mohamed Ali et Adil Laghfour</h3>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".services_header").click(function(){
+                $(this).next('.service_').slideToggle()
+                $(this).children("button").toggleClass("up")
+                $(this).children("button").toggleClass("down")
+            })
+        })
+        function add_price(){
+            var price_elem = document.getElementById("span_price")
+            var price = +price_elem.textContent + 99.98
+            price_elem.innerHTML = price.toFixed(2)
+        }
+
+        $("form").submit(function(e){
+            if ($(this).is(':invalid') == 0 && $("#span_price").text() != 0){
+                localStorage.service = JSON.stringify(true)
+            }else{
+                e.preventDefault()
+                $(".message").css("display","inherit")
+            }
+        })
+    </script>
+    <script src="assets/js/panier.js"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+</html>

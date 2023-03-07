@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+main{
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    background: #f5f5f5;
+}
+input:focus , textarea:focus, select:focus{
+    outline: none;
+}
+textarea{
+    resize: none;
+}
+.center{
+    margin-left: 25%;
+    transform: translateX(-25%);
+}
+h1, h2, h3{
+    color: rgb(75, 73, 73);
+}
+a{
+    text-decoration: none;
+    user-select: none;
+}
+button{
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+ul{
+    list-style: none;
+}
+.panier{
+    position: relative;
+}
+#panier_elem{
+    color: white;
+    background: red;
+    padding: 8px;
+    width: 13px;
+    height: 13px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+}
+.indev{
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 99;
+    display: none;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+}
+@media (max-width: 850px) {
+    body{
+        overflow: hidden;
+    }
+    .indev{
+        display: flex;
+    }
+    .indev_hide{
+        display: none;
+    }
+}

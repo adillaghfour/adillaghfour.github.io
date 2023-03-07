@@ -1,0 +1,11 @@
+section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+section img{
+    width: 51%;
+    height: 51%;
+}

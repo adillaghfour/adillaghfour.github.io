@@ -1,0 +1,62 @@
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vh;
+    height: 10vh;
+    transition: top 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+nav a{
+    color: black;
+    font-size: 15px;
+    
+}
+.nav_links li hr{
+    background: rgba(255, 166, 0, 0.849);
+    height: 2px;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.nav_links li:hover > hr{
+    display: inherit;
+}
+.nav_links li:hover > a{
+    color: orange !important;    
+}
+.active a{
+    color: orange;
+}
+.active hr{
+    display: inherit !important;
+}
+.logo{
+    font-style: italic;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+.first_div{
+    position: relative;
+}
+.panier{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.panier i{ 
+    font-weight: bold;
+    font-size: 19px;
+}

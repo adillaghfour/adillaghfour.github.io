@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/config.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style_panier.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/b9106258b7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <title>menagemaroc | panier</title>
+</head>
+<body>
+    <div class="indev">
+        <h1><span style="color: orange;">Menage</span>Maroc</h1>
+        <img src="assets/images/inDev.jpg" width="90%">
+        <h2>Nous tenons à informer nos utilisateurs que la plateforme MenageMaroc est actuellement en cours de développement par notre équipe informatique pour les versions mobiles. Nous travaillons sans relâche pour rendre notre plateforme accessible et conviviale sur tous les appareils mobiles <br> Merci pour votre compréhension</h2>
+    </div>
+    <div class="indev_hide">
+    <nav id="navbar">
+        <a href="index.html"><div class="logo" ><span style="color: orange;">Menage</span>Maroc</div></a>
+        <ul class="nav_links">
+            <li><a href="index.html">Acceuil</a><hr></li>
+            <li>|</li>
+            <li><a href="services.html">Services</a><hr></li>
+            <li>|</li>
+            <li><a href="produits.html">Produits</a><hr></li>
+            <li>|</li>
+            <li><a href="apropos.html">A props de nous</a><hr></li>
+            <li>|</li>
+            <li class="active panier"><a href="panier.html"><i class='bx bx-cart'></i>Panier</a><hr><div id="panier_elem">1</div></li>
+        </ul>
+    </nav>
+    <div class="message" style="display: none;">
+        <h3>Ajoutez d'abord l'une de nos services</h3>
+    </div>
+    <main>
+        <section>
+            <div class="panier_pay">
+                <div class="commandes">
+                    <div class="panier_vide" data-aos="zoom-in">
+                        <img src="assets/images/empty-cart.png">
+                        <h2>Votre Panier est vide</h2>
+                        <a href="produits.html">Ajouter un produit</a>
+                        <a href="services.html">Ajouter une service</a>
+                    </div>
+                    <h1 id="prix_total"><p>Prix Totale</p><p><span class="prix">0
+                    </span> MAD</p></h1>
+                    <div class="produits">
+                        <h2 id="produits_header">Produits</h2>
+                        <div class="commande_produit">
+                            <div class="cmd_div1">
+                                <img src="assets/images/panier/prod_1.jpg">
+                                <p>outil de nettoyage amovible</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="commande_produit">
+                            <div class="cmd_div1">
+                                <img src="assets/images/panier/prod_2.jpg">
+                                <p>outil de nettoyage amovible</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="commande_produit">
+                            <div class="cmd_div1">
+                                <img src="assets/images/panier/prod_3.jpg">
+                                <p>outil de nettoyage amovible</p>                                
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="commande_produit">
+                            <div class="cmd_div1">
+                                <img src="assets/images/panier/prod_4.jpg">
+                                <p>outil de nettoyage amovible</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <h2 id="services_header">Services</h2>
+                        <div class="commande_service">
+                            <div class="cmd_div1">
+                                <img src="assets/images/maison_service.png">
+                                <p>Grand Ménage</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="commande_service">
+                            <div class="cmd_div1">
+                                <img src="assets/images/cuisine_service.png">
+                                <p>Cuisine</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>
+                        <div class="commande_service">
+                            <div class="cmd_div1">
+                                <img src="assets/images/service_automobile_icon.png">
+                                <p>Lavage totale</p>
+                            </div>
+                            <div class="cmd_div2">
+                                <p>99.98 MAD</p>
+                                <button class="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>                                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="pay" data-aos="fade-left">
+                    <form class="card_details" action="recu.html">
+                        <h1 style="color: white;">Card Details</h1>
+                        <h3>Type de Carte</h3>
+                        <div class="card_header">
+                            <div class="card">
+                                <img src="assets/images/visa.png">
+                                <p>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                    <span>****</span>
+                                </p>
+                                <p><span>Mr.agourram</span><span>01/09</span></p>
+                            </div>
+                            <i class="fa-brands fa-cc-mastercard"></i>                            
+                        </div>
+                        <h3>Nom sur la carte</h3>
+                        <input type="text" value="Mr agourram" required>
+                        <h3>Numéro de Carter</h3>
+                        <input type="text" value="**** **** **** ****" required>
+                        <h3>Date d'expiration</h3>
+                        <input type="date" required>
+                        <button  type="submit">Obtenir</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_logo" style="color: rgb(255, 255, 255);">
+
+        <div class="tag">
+            <h3 style="color: grey;">Contact</h3>
+            <a href="#"> <i class="fa-solid fa-house"></i>123/Colombo/Sri Lanka</a>
+            <a href="#"> <i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+            <a href="#"> <i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
+        </div>
+        <p style="color: grey; margin-top: 5px;"></p>
+
+        </div>
+        <div class="tag">
+            <h3>Get Help</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Payment Options</a>
+        </div>
+        <ul class="footer_links">
+            <h3>Accées Rapide <i class="fa-solid fa-link"></i></h3>
+            <li class="active"><a href="index.html">Acceuil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="apropos.html">A props de nous</a></li>
+            <li class="panier"><a href="panier.html"><i class='bx bx-cart'></i>Panier</a></li>
+        </ul>
+        <div class="contactus">
+            <label for="email">Je m’inscris à la newsletter <br> #Nqawa !</label>
+            <div class="form">
+                <input type="email" id="email" placeholder="Votre Email">
+                <button>Envoyer</button>
+            </div>
+            <p>Suivez-nous sur les réseaux sociaux</p>
+            <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights">
+        <h3><i class="fa-solid fa-at"></i> Copyright 2023 - DEV101 - Agourram Mohamed Ali et Adil Laghfour</h3>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".delete").click(function(){
+                var price = $('.prix').text()
+                var newPrice = +price - 99.98
+                $('.prix').text(newPrice.toFixed(2))
+                $(this).parent().parent().remove()
+            })
+            $(".produits").click(function () {
+                let count = $('.commande_produit').length
+                if(count == 0){
+                    $("#produits_header").remove()
+                }
+            });
+            $(".services").click(function () {
+                let count = $('.commande_service').length
+                if(count == 0){
+                    $("#services_header").remove()
+                }
+            });
+            $(".commandes").click(function(){
+                let produit_count = $('.commande_produit').length
+                let service_count = $('.commande_service').length
+                let full_count = produit_count + service_count
+                if(service_count == 0){
+                    localStorage.service = ""
+                    location.reload()
+                } 
+                if(produit_count == 0){
+                    localStorage.produit = ""
+                    location.reload()
+                }
+            })
+            if(localStorage.service){
+                $(".services").css("display", "flex")
+                $('.prix').text("299.94")
+                $(".panier_vide").css("display", "none")
+            }else{
+                $(".panier_vide").css("display", "flex")
+            }
+            if(localStorage.produit){
+                $(".produits").css("display", "flex")
+                $('.prix').text("399.92")
+                $(".panier_vide").css("display", "none")
+            }
+            if(!localStorage.service && !localStorage.produit){
+                $(".panier_vide").css("display", "flex")
+                $("#prix_total").css("display", "none")
+            }
+            if(localStorage.service && localStorage.produit){
+                $('.prix').text("699.86")
+            }
+            $("form").submit(function(e){
+                if ($(".panier_vide").css("display") != "none"){
+                    e.preventDefault()
+                    $(".message").css("display","inherit")
+                }
+            })
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/panier.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
